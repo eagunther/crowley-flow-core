@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD6c49b88284251510542fd73b319a6bec</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>36eae88247e11510c78b84d7536d431b</scope_name>
+        <serialized_content>{"FlowDesigner:FD6c49b88284251510542fd73b319a6bec":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD6c49b88284251510542fd73b319a6bec.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"af8d1a31-5aa4-4ec4-8f12-ee8e0518ae5a\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD6c49b88284251510542fd73b319a6bec\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 14:46:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2049b88247251510c78b84d7536d43ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD6c49b88284251510542fd73b319a6bec</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name>sys_complex_object_2049b88247251510c78b84d7536d43ed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 14:46:24</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>
