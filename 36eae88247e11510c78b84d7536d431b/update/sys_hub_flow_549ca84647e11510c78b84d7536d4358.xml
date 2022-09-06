@@ -554,7 +554,7 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="Crowley Task">549ca84647e11510c78b84d7536d4358</flow>
         <order>3</order>
@@ -563,10 +563,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-08-28 14:15:37</sys_created_on>
         <sys_id>0fcbb91247a55510c78b84d7536d4330</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-28 14:15:46</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-08-30 17:34:52</sys_updated_on>
         <ui_id>77819555-640d-490e-b4fc-830ee21b6b3e</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0fcbb91247a55510c78b84d7536d4330"/>
@@ -638,10 +638,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-08-27 13:50:59</sys_created_on>
         <sys_id>6c9ca84647e11510c78b84d7536d43b1</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-28 14:15:46</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-08-30 17:34:52</sys_updated_on>
         <ui_id>27786f72-a6bb-4089-a1fd-a9da99c99c41</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6c9ca84647e11510c78b84d7536d43b1"/>
@@ -677,7 +677,7 @@
         <action_type display_value="Get Message">1449b88247251510c78b84d7536d43d1</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>1449b88247251510c78b84d7536d43d1</compiled_snapshot>
         <display_text/>
         <flow display_value="Crowley Task">549ca84647e11510c78b84d7536d4358</flow>
         <order>1</order>
@@ -686,10 +686,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-08-28 14:15:36</sys_created_on>
         <sys_id>83cbb91247a55510c78b84d7536d4327</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-28 14:15:46</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-08-30 17:34:52</sys_updated_on>
         <ui_id>737cb7a3-8bce-41f1-b8a5-00350a07bb60</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=83cbb91247a55510c78b84d7536d4327"/>
@@ -725,10 +725,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-08-27 13:50:59</sys_created_on>
         <sys_id>a89ca84647e11510c78b84d7536d4399</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-28 14:15:46</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-08-30 17:34:52</sys_updated_on>
         <ui_id>0314fcfa-078b-4ab5-9fed-2626c2d25e13</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a89ca84647e11510c78b84d7536d4399"/>
@@ -812,10 +812,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-08-27 13:50:59</sys_created_on>
         <sys_id>a89ca84647e11510c78b84d7536d43f7</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-28 14:15:46</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-08-30 17:34:52</sys_updated_on>
         <ui_id>071d0b73-5b40-4d8d-80d6-a6b388f4725f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a89ca84647e11510c78b84d7536d43f7"/>
@@ -1212,9 +1212,9 @@ Assignment: TODO: update Crowley Task to handle assignment details in Additional
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=549ca84647e11510c78b84d7536d4358"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=549ca84647e11510c78b84d7536d4358^sys_idNOT IN728de0c647e11510c78b84d7536d43d9"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>com.snc.process_flow.engine.ProcessPlan@c73f36</plan>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"728de0c647e11510c78b84d7536d43d9","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="Crowley Task">549ca84647e11510c78b84d7536d4358</plan_id>
-        <snapshot>9e8da0c647e11510c78b84d7536d43e1</snapshot>
+        <snapshot>dd9cf40347edd510c78b84d7536d435c</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-08-27 13:55:14</sys_created_on>
         <sys_domain>global</sys_domain>

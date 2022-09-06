@@ -854,7 +854,22 @@
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_3ecf2cc647e11510c78b84d7536d4301"/>
-    <sys_hub_action_plan action="delete_multiple" query="action_id=3ecf2cc647e11510c78b84d7536d4301"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=3ecf2cc647e11510c78b84d7536d4301^sys_idNOT IN4970b08a47e11510c78b84d7536d43f7"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Is Manager">3ecf2cc647e11510c78b84d7536d4301</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"4970b08a47e11510c78b84d7536d43f7","name":"plan","plan_signature":null}}</plan>
+        <snapshot>f470b08a47e11510c78b84d7536d43b9</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 14:07:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4970b08a47e11510c78b84d7536d43f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 14:07:57</sys_updated_on>
+    </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
