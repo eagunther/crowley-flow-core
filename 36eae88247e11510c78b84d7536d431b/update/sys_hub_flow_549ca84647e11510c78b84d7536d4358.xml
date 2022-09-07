@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>549ca84647e11510c78b84d7536d4358</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Crowley Task</sys_name>
         <sys_overrides/>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
         <sys_update_name>sys_hub_flow_549ca84647e11510c78b84d7536d4358</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-28 14:15:46</sys_updated_on>
+        <sys_updated_on>2022-09-06 12:47:29</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=549ca84647e11510c78b84d7536d4358"/>
@@ -625,9 +625,8 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=0fcbb91247a55510c78b84d7536d4330"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Crowley Task - Add Variables">976f1a239799111083f1f8b3f153af9b</action_type>
-        <action_type_parent display_value="Crowley Task - Add Variables">9a5cd26f9759111083f1f8b3f153afe3</action_type_parent>
+        <action_type display_value="">976f1a239799111083f1f8b3f153af9b</action_type>
+        <action_type_parent display_value="">9a5cd26f9759111083f1f8b3f153afe3</action_type_parent>
         <comment/>
         <compiled_snapshot>976f1a239799111083f1f8b3f153af9b</compiled_snapshot>
         <display_text/>
@@ -645,31 +644,6 @@
         <ui_id>27786f72-a6bb-4089-a1fd-a9da99c99c41</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6c9ca84647e11510c78b84d7536d43b1"/>
-    <sys_element_mapping action="delete_multiple" query="id=6c9ca84647e11510c78b84d7536d43b1"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>catalog_task_id</field>
-        <id>6c9ca84647e11510c78b84d7536d43b1</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-08-27 13:50:59</sys_created_on>
-        <sys_id>e09ca84647e11510c78b84d7536d43f1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-27 13:50:59</sys_updated_on>
-        <table>var__m_sys_hub_action_input_976f1a239799111083f1f8b3f153af9b</table>
-        <value>{{0314fcfa-078b-4ab5-9fed-2626c2d25e13.Catalog Task.sys_id}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>requested_item</field>
-        <id>6c9ca84647e11510c78b84d7536d43b1</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-08-27 13:50:59</sys_created_on>
-        <sys_id>a49ca84647e11510c78b84d7536d43f1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-27 13:50:59</sys_updated_on>
-        <table>var__m_sys_hub_action_input_976f1a239799111083f1f8b3f153af9b</table>
-        <value>{{subflow.requested_item}}</value>
-    </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=6c9ca84647e11510c78b84d7536d43b1"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=6c9ca84647e11510c78b84d7536d43b1"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
@@ -1081,11 +1055,11 @@ Assignment: TODO: update Crowley Task to handle assignment details in Additional
         <sys_created_on>2022-08-27 13:50:58</sys_created_on>
         <sys_id>209ca84647e11510c78b84d7536d4371</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Assignment Group</sys_name>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_549ca84647e11510c78b84d7536d4358_assignment_group_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-08-27 13:50:58</sys_updated_on>
         <url/>
@@ -1104,11 +1078,11 @@ Assignment: TODO: update Crowley Task to handle assignment details in Additional
         <sys_created_on>2022-08-27 13:50:58</sys_created_on>
         <sys_id>249ca84647e11510c78b84d7536d4368</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Short Description</sys_name>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_549ca84647e11510c78b84d7536d4358_short_description_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-08-27 13:50:58</sys_updated_on>
         <url/>
@@ -1127,11 +1101,11 @@ Assignment: TODO: update Crowley Task to handle assignment details in Additional
         <sys_created_on>2022-08-27 13:50:58</sys_created_on>
         <sys_id>6c9ca84647e11510c78b84d7536d4382</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Assigned To</sys_name>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_549ca84647e11510c78b84d7536d4358_assigned_to_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-08-27 13:50:58</sys_updated_on>
         <url/>
@@ -1150,11 +1124,11 @@ Assignment: TODO: update Crowley Task to handle assignment details in Additional
         <sys_created_on>2022-08-27 13:50:58</sys_created_on>
         <sys_id>9c9ca84647e11510c78b84d7536d4364</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Requested Item</sys_name>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_549ca84647e11510c78b84d7536d4358_requested_item_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-08-27 13:50:58</sys_updated_on>
         <url/>
@@ -1173,11 +1147,11 @@ Assignment: TODO: update Crowley Task to handle assignment details in Additional
         <sys_created_on>2022-08-27 13:50:58</sys_created_on>
         <sys_id>a89ca84647e11510c78b84d7536d436b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Description</sys_name>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_549ca84647e11510c78b84d7536d4358_description_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-08-27 13:50:58</sys_updated_on>
         <url/>
@@ -1198,11 +1172,11 @@ Assignment: TODO: update Crowley Task to handle assignment details in Additional
         <sys_created_on>2022-08-27 13:50:58</sys_created_on>
         <sys_id>a49ca84647e11510c78b84d7536d438c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>output</sys_name>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_549ca84647e11510c78b84d7536d4358_output_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-08-27 13:50:58</sys_updated_on>
         <url/>
@@ -1975,9 +1949,8 @@ Assignment: TODO: update Crowley Task to handle assignment details in Additional
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=a28de0c647e11510c78b84d7536d4361"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Crowley Task - Add Variables">976f1a239799111083f1f8b3f153af9b</action_type>
-        <action_type_parent display_value="Crowley Task - Add Variables">9a5cd26f9759111083f1f8b3f153afe3</action_type_parent>
+        <action_type display_value="">976f1a239799111083f1f8b3f153af9b</action_type>
+        <action_type_parent display_value="">9a5cd26f9759111083f1f8b3f153afe3</action_type_parent>
         <comment/>
         <compiled_snapshot>976f1a239799111083f1f8b3f153af9b</compiled_snapshot>
         <display_text/>
@@ -1995,31 +1968,6 @@ Assignment: TODO: update Crowley Task to handle assignment details in Additional
         <ui_id>27786f72-a6bb-4089-a1fd-a9da99c99c41</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a28de0c647e11510c78b84d7536d436b"/>
-    <sys_element_mapping action="delete_multiple" query="id=a28de0c647e11510c78b84d7536d436b"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>catalog_task_id</field>
-        <id>a28de0c647e11510c78b84d7536d436b</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-08-27 13:55:13</sys_created_on>
-        <sys_id>668de0c647e11510c78b84d7536d436c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-27 13:55:13</sys_updated_on>
-        <table>var__m_sys_hub_action_input_976f1a239799111083f1f8b3f153af9b</table>
-        <value>{{0314fcfa-078b-4ab5-9fed-2626c2d25e13.Catalog Task.sys_id}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>requested_item</field>
-        <id>a28de0c647e11510c78b84d7536d436b</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-08-27 13:55:13</sys_created_on>
-        <sys_id>2a8de0c647e11510c78b84d7536d436c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-27 13:55:13</sys_updated_on>
-        <table>var__m_sys_hub_action_input_976f1a239799111083f1f8b3f153af9b</table>
-        <value>{{subflow.requested_item}}</value>
-    </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=a28de0c647e11510c78b84d7536d436b"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=a28de0c647e11510c78b84d7536d436b"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
@@ -2306,11 +2254,11 @@ Assignment: TODO: update Crowley Task to handle assignment details in Additional
         <sys_created_on>2022-08-27 13:55:12</sys_created_on>
         <sys_id>1e8de0c647e11510c78b84d7536d430c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Requested Item</sys_name>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9e8da0c647e11510c78b84d7536d43e1_requested_item_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-08-27 13:55:12</sys_updated_on>
         <url/>
@@ -2329,11 +2277,11 @@ Assignment: TODO: update Crowley Task to handle assignment details in Additional
         <sys_created_on>2022-08-27 13:55:12</sys_created_on>
         <sys_id>1e8de0c647e11510c78b84d7536d4314</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Short Description</sys_name>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9e8da0c647e11510c78b84d7536d43e1_short_description_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-08-27 13:55:12</sys_updated_on>
         <url/>
@@ -2352,11 +2300,11 @@ Assignment: TODO: update Crowley Task to handle assignment details in Additional
         <sys_created_on>2022-08-27 13:55:12</sys_created_on>
         <sys_id>268de0c647e11510c78b84d7536d4329</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Description</sys_name>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9e8da0c647e11510c78b84d7536d43e1_description_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-08-27 13:55:12</sys_updated_on>
         <url/>
@@ -2375,11 +2323,11 @@ Assignment: TODO: update Crowley Task to handle assignment details in Additional
         <sys_created_on>2022-08-27 13:55:12</sys_created_on>
         <sys_id>2a8de0c647e11510c78b84d7536d4335</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Assignment Group</sys_name>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9e8da0c647e11510c78b84d7536d43e1_assignment_group_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-08-27 13:55:12</sys_updated_on>
         <url/>
@@ -2398,11 +2346,11 @@ Assignment: TODO: update Crowley Task to handle assignment details in Additional
         <sys_created_on>2022-08-27 13:55:12</sys_created_on>
         <sys_id>ae8de0c647e11510c78b84d7536d4341</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Assigned To</sys_name>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9e8da0c647e11510c78b84d7536d43e1_assigned_to_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-08-27 13:55:12</sys_updated_on>
         <url/>
@@ -2423,11 +2371,11 @@ Assignment: TODO: update Crowley Task to handle assignment details in Additional
         <sys_created_on>2022-08-27 13:55:13</sys_created_on>
         <sys_id>2a8de0c647e11510c78b84d7536d434f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>output</sys_name>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_9e8da0c647e11510c78b84d7536d43e1_output_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-08-27 13:55:13</sys_updated_on>
         <url/>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias">
+    <sys_alias action="INSERT_OR_UPDATE">
+        <configuration_template/>
+        <connection_type>sys_connection</connection_type>
+        <id>x_110640_cr_fcore.GIT_E</id>
+        <multiple_connections>false</multiple_connections>
+        <name>GIT E</name>
+        <parent/>
+        <retry_policy display_value="Default SFTP Retry Policy">e385484773100010e3a71afe2ff6a709</retry_policy>
+        <sys_class_name>sys_alias</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-07 11:37:10</sys_created_on>
+        <sys_id>825730259731111085f035dfe153af72</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_110640_cr_fcore.GIT_E</sys_name>
+        <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name>sys_alias_825730259731111085f035dfe153af72</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-07 11:38:12</sys_updated_on>
+        <type>credential</type>
+    </sys_alias>
+</record_update>

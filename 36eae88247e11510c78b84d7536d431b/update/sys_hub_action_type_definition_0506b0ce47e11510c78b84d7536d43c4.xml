@@ -27,7 +27,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0506b0ce47e11510c78b84d7536d43c4</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Get Message</sys_name>
         <sys_overrides/>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
@@ -35,7 +35,7 @@
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_0506b0ce47e11510c78b84d7536d43c4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-29 01:11:37</sys_updated_on>
+        <sys_updated_on>2022-09-06 12:47:21</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -166,18 +166,6 @@
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=fde8748247251510c78b84d7536d431e"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>fde8748247251510c78b84d7536d431e</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-08-27 14:44:51</sys_created_on>
-        <sys_id>75e8748247251510c78b84d7536d4329</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-27 14:44:51</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>key</field>
         <id>fde8748247251510c78b84d7536d431e</id>
         <sys_created_by>admin</sys_created_by>
@@ -188,18 +176,6 @@
         <sys_updated_on>2022-08-27 14:46:19</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_fde8748247251510c78b84d7536d431e</table>
         <value>{{action.key}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>fde8748247251510c78b84d7536d431e</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-08-27 14:44:51</sys_created_on>
-        <sys_id>3de8748247251510c78b84d7536d4329</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-27 14:44:51</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_fde8748247251510c78b84d7536d431e^id=fde8748247251510c78b84d7536d431e"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=fde8748247251510c78b84d7536d431e"/>
@@ -382,11 +358,11 @@
         <sys_created_on>2022-08-27 14:46:19</sys_created_on>
         <sys_id>4b39b88247251510c78b84d7536d432b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Message</sys_name>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_fde8748247251510c78b84d7536d431e_message_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-08-27 14:46:19</sys_updated_on>
         <url/>
@@ -757,11 +733,11 @@
         <sys_created_on>2022-08-27 14:44:51</sys_created_on>
         <sys_id>71e8748247251510c78b84d7536d431d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Key</sys_name>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_0506b0ce47e11510c78b84d7536d43c4_key_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-08-27 14:44:51</sys_updated_on>
         <url/>
@@ -782,11 +758,11 @@
         <sys_created_on>2022-08-27 14:46:19</sys_created_on>
         <sys_id>1739b88247251510c78b84d7536d4345</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Message</sys_name>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_0506b0ce47e11510c78b84d7536d43c4_message_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-08-27 14:46:19</sys_updated_on>
         <url/>
@@ -805,11 +781,11 @@
         <sys_created_on>2022-08-27 14:46:19</sys_created_on>
         <sys_id>9b39b88247251510c78b84d7536d4339</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_0506b0ce47e11510c78b84d7536d43c4___action_status___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-08-27 14:46:19</sys_updated_on>
         <url/>
@@ -828,11 +804,11 @@
         <sys_created_on>2022-08-27 14:46:19</sys_created_on>
         <sys_id>db39b88247251510c78b84d7536d4340</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_0506b0ce47e11510c78b84d7536d43c4___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-08-27 14:46:19</sys_updated_on>
         <url/>
@@ -1019,18 +995,6 @@
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=1849b88247251510c78b84d7536d43da"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>1849b88247251510c78b84d7536d43da</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-08-27 14:46:24</sys_created_on>
-        <sys_id>a449b88247251510c78b84d7536d43e9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-27 14:46:24</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>key</field>
         <id>1849b88247251510c78b84d7536d43da</id>
         <sys_created_by>admin</sys_created_by>
@@ -1041,18 +1005,6 @@
         <sys_updated_on>2022-08-27 14:46:24</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_1849b88247251510c78b84d7536d43da</table>
         <value>{{action.key}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>1849b88247251510c78b84d7536d43da</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-08-27 14:46:24</sys_created_on>
-        <sys_id>6849b88247251510c78b84d7536d43e9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-27 14:46:24</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_1849b88247251510c78b84d7536d43da^id=1849b88247251510c78b84d7536d43da"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=1849b88247251510c78b84d7536d43da"/>
@@ -1235,11 +1187,11 @@
         <sys_created_on>2022-08-27 14:46:24</sys_created_on>
         <sys_id>5049b88247251510c78b84d7536d43e6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Message</sys_name>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_1849b88247251510c78b84d7536d43da_message_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-08-27 14:46:24</sys_updated_on>
         <url/>
@@ -1610,11 +1562,11 @@
         <sys_created_on>2022-08-27 14:46:24</sys_created_on>
         <sys_id>d849b88247251510c78b84d7536d43d8</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Key</sys_name>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_1449b88247251510c78b84d7536d43d1_key_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-08-27 14:46:24</sys_updated_on>
         <url/>
@@ -1635,11 +1587,11 @@
         <sys_created_on>2022-08-27 14:46:24</sys_created_on>
         <sys_id>6049b88247251510c78b84d7536d43fa</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_1449b88247251510c78b84d7536d43d1___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-08-27 14:46:24</sys_updated_on>
         <url/>
@@ -1658,11 +1610,11 @@
         <sys_created_on>2022-08-27 14:46:24</sys_created_on>
         <sys_id>6449b88247251510c78b84d7536d43f3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_1449b88247251510c78b84d7536d43d1___action_status___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-08-27 14:46:24</sys_updated_on>
         <url/>
@@ -1681,11 +1633,11 @@
         <sys_created_on>2022-08-27 14:46:24</sys_created_on>
         <sys_id>a849b88247251510c78b84d7536d43fe</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Message</sys_name>
         <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_1449b88247251510c78b84d7536d43d1_message_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-08-27 14:46:24</sys_updated_on>
         <url/>
