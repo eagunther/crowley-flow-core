@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDde96f3ba69a9d510c37094987a30e0e3</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>36eae88247e11510c78b84d7536d431b</scope_name>
+        <serialized_content>{"FlowDesigner:FDde96f3ba69a9d510c37094987a30e0e3":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDde96f3ba69a9d510c37094987a30e0e3.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Array\",\"mandatory\":\"true\",\"child_name\":\"array_child0\",\"uiUniqueId\":\"2fb2cc26-a270-43b5-808b-31941c558605\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FDde96f3ba69a9d510c37094987a30e0e3\",\"child_label\":\"Array_child0\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.string\",\"child_type\":\"string\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"3f5334c9-92bb-4ccd-9e2d-01bc55c1366f\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-30 12:29:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9296f3ba47a9d510c78b84d7536d43e4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>FDde96f3ba69a9d510c37094987a30e0e3</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name>sys_complex_object_9296f3ba47a9d510c78b84d7536d43e4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-30 12:37:33</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

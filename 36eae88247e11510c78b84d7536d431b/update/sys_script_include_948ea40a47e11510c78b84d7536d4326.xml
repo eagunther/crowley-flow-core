@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_110640_cr_fcore.CrowleyCoreUtil</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>CrowleyCoreUtil</name>
+        <script><![CDATA[var CrowleyCoreUtil = Class.create();
+CrowleyCoreUtil.prototype = {
+	initialize: function() {
+	},
+
+	getMessage: function(key) {
+		return gs.getMessage(key);
+	},
+	
+	isManager: function(userID) {
+		/*
+		Returns a boolean indicating whether the user has any direct reports
+		*/
+		var gr = new GlideRecord('sys_user');
+		gr.addQuery('manager', userID);
+		gr.query();
+
+		return (gr.getRowCount() > 0);		
+	},
+
+	addRequestedItemVariables: function(current, catalog_task_id) {
+		/*
+		Description: Adds Requested Item variables to the Catalog Task in a generic way to avoid having to manually update Flow Designer flows
+		Reference: https://community.servicenow.com/community?id=community_article&sys_id=4837201c1ba28050fff162c4bd4bcbf6
+		Target table: sc_item_variables_task
+		*/
+
+		var cat_item = current.cat_item;
+
+		//Get the list of variable sets associated to the catalog item
+		var grCatalogVSet = new GlideRecord('io_set_item');
+		grCatalogVSet.addQuery('sc_cat_item', cat_item);
+		grCatalogVSet.query();
+
+		//This is the target table for associating variables to the Catalog Task
+		var grTaskVariable = new GlideRecord('sc_item_variables_task');    
+
+		//For each variable set, get each variable
+		while (grCatalogVSet.next()) {
+			var grVSet = new GlideRecord('item_option_new');
+			grVSet.addQuery('variable_set', grCatalogVSet.getValue('variable_set'));
+			grVSet.query();
+
+			while (grVSet.next()) {
+				grTaskVariable.newRecord();
+				grTaskVariable.setValue('task', catalog_task_id);
+				grTaskVariable.setValue('variable', grVSet.getUniqueValue());
+				grTaskVariable.insert();      	 
+			}
+		}
+
+		var grVariable = new GlideRecord('item_option_new');
+		grVariable.addQuery('cat_item', cat_item);
+		grVariable.addActiveQuery();
+		grVariable.query();
+
+		while (grVariable.next()) {
+			grTaskVariable.newRecord();
+			grTaskVariable.setValue('task', catalog_task_id);
+			grTaskVariable.setValue('variable', grVariable.getUniqueValue());
+			grTaskVariable.insert();
+		}
+	},
+
+	type: 'CrowleyCoreUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 14:03:09</sys_created_on>
+        <sys_id>948ea40a47e11510c78b84d7536d4326</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>CrowleyCoreUtil</sys_name>
+        <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name>sys_script_include_948ea40a47e11510c78b84d7536d4326</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-29 01:06:59</sys_updated_on>
+    </sys_script_include>
+</record_update>

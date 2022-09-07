@@ -1,0 +1,2441 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-sandiego-12-22-2021__patch1-03-02-2022_03-17-2022_1811.zip</compiler_build>
+        <copied_from>afc95eab9759111083f1f8b3f153afaa</copied_from>
+        <copied_from_name>Crowley Task</copied_from_name>
+        <description/>
+        <internal_name>crowley_task</internal_name>
+        <label_cache>[{"name":"flow_variable.task_message","label":"Flow Variables➛Task Message","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b0486cdc-3fc7-4d77-bb28-c71967500eeb"}},{"name":"77819555-640d-490e-b4fc-830ee21b6b3e.__dont_treat_as_error__","label":"3 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"77819555-640d-490e-b4fc-830ee21b6b3e.__action_status__","label":"3 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"77819555-640d-490e-b4fc-830ee21b6b3e.table_name","label":"3 - Update Record➛Requested Item Table","reference":"sc_req_item","reference_display":"Requested Item","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"77819555-640d-490e-b4fc-830ee21b6b3e.record","label":"3 - Update Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"737cb7a3-8bce-41f1-b8a5-00350a07bb60.message","label":"1 - Get Message➛Message","reference_display":"Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"88f853c5-e941-41b7-8037-6b0f01bdcf9b"}},{"name":"737cb7a3-8bce-41f1-b8a5-00350a07bb60.__dont_treat_as_error__","label":"1 - Get Message➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"335c41a1-3167-4ee3-b8b4-553f645ebf9e"}},{"name":"737cb7a3-8bce-41f1-b8a5-00350a07bb60.__action_status__","label":"1 - Get Message➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD6c49b88284251510542fd73b319a6bec","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"af8d1a31-5aa4-4ec4-8f12-ee8e0518ae5a"}},{"name":"0314fcfa-078b-4ab5-9fed-2626c2d25e13.Catalog Task.sys_id","label":"4 - Create Catalog Task➛Catalog Task➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sc_task","column_name":"sys_id"},{"name":"3fc413e5-98cb-4ac9-b426-0bb4b28b8745.__dont_treat_as_error__","label":"2 - Crowley Task - Add Variables➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"4ad3808b-3aac-40dd-88fe-e637166bb688"}},{"name":"3fc413e5-98cb-4ac9-b426-0bb4b28b8745.__action_status__","label":"2 - Crowley Task - Add Variables➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"45e9140d-71de-4d1a-bf50-0539fe22de67"}},{"name":"7dc60e21-a844-4804-95ee-fd7a7d4637d2.__dont_treat_as_error__","label":"3 - Crowley Task - Add Variables➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"4ad3808b-3aac-40dd-88fe-e637166bb688"}},{"name":"7dc60e21-a844-4804-95ee-fd7a7d4637d2.__action_status__","label":"3 - Crowley Task - Add Variables➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"45e9140d-71de-4d1a-bf50-0539fe22de67"}},{"name":"071d0b73-5b40-4d8d-80d6-a6b388f4725f.__dont_treat_as_error__","label":"6 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"071d0b73-5b40-4d8d-80d6-a6b388f4725f.__action_status__","label":"6 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"071d0b73-5b40-4d8d-80d6-a6b388f4725f.state","label":"6 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"bb871307-7a35-4de2-baeb-e32b73ea5df8.__dont_treat_as_error__","label":"2 - Crowley Task - Add Variables➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"4ad3808b-3aac-40dd-88fe-e637166bb688"}},{"name":"bb871307-7a35-4de2-baeb-e32b73ea5df8.__action_status__","label":"2 - Crowley Task - Add Variables➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"45e9140d-71de-4d1a-bf50-0539fe22de67"}},{"name":"subflow.description","label":"Input➛Description","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9672d660-4a46-4e82-9886-39879b90ce3e","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.short_description","label":"Input➛Short Description","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6bcd2813-92df-41bc-ab04-94ad1158afb6","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"0314fcfa-078b-4ab5-9fed-2626c2d25e13.__dont_treat_as_error__","label":"4 - Create Catalog Task➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0314fcfa-078b-4ab5-9fed-2626c2d25e13.__action_status__","label":"4 - Create Catalog Task➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0314fcfa-078b-4ab5-9fed-2626c2d25e13.Catalog Task","label":"4 - Create Catalog Task➛Catalog Task","reference":"sc_task","reference_display":"Catalog Task","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.asignee","label":"Input➛Asignee","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"dcb3d81d-da27-4bbe-98e9-dbe87f90771a","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.assignment_group","label":"Input➛Assignment Group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"19a7645d-b350-4aaf-af50-0e9e156619ea","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.requested_item","label":"Input➛Requested Item","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8f21dbf9-9303-4ab1-9360-ce650796775d","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"11a19d83-43a5-4f29-b5a5-1ea8d9700d23.__dont_treat_as_error__","label":"1 - Create Task➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"11a19d83-43a5-4f29-b5a5-1ea8d9700d23.__action_status__","label":"1 - Create Task➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"11a19d83-43a5-4f29-b5a5-1ea8d9700d23.Table","label":"1 - Create Task➛Catalog Task Table","reference":"sc_task","reference_display":"Catalog Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"11a19d83-43a5-4f29-b5a5-1ea8d9700d23.Record","label":"1 - Create Task➛Catalog Task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"823d1dc5-90a0-4b11-8d5c-a56e4bdcc0a7.__action_status__","label":"2 - Crowley Task - Add Variables➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"45e9140d-71de-4d1a-bf50-0539fe22de67"}},{"name":"823d1dc5-90a0-4b11-8d5c-a56e4bdcc0a7.__dont_treat_as_error__","label":"2 - Crowley Task - Add Variables➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"4ad3808b-3aac-40dd-88fe-e637166bb688"}},{"name":"1bb3366c-5999-4534-9b60-e38ccaaacbab.__action_status__","label":"2 - Crowley Task - Add Variables➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"45e9140d-71de-4d1a-bf50-0539fe22de67"}},{"name":"1bb3366c-5999-4534-9b60-e38ccaaacbab.__dont_treat_as_error__","label":"2 - Crowley Task - Add Variables➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"4ad3808b-3aac-40dd-88fe-e637166bb688"}},{"name":"subflow.requested_item.cat_item","label":"Input➛Requested Item➛Item","reference":"sc_cat_item","reference_display":"Catalog Item","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"cat_item"},{"name":"27786f72-a6bb-4089-a1fd-a9da99c99c41.__action_status__","label":"5 - Crowley Task - Add Variables➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"45e9140d-71de-4d1a-bf50-0539fe22de67"}},{"name":"27786f72-a6bb-4089-a1fd-a9da99c99c41.__dont_treat_as_error__","label":"5 - Crowley Task - Add Variables➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"4ad3808b-3aac-40dd-88fe-e637166bb688"}},{"name":"0314fcfa-078b-4ab5-9fed-2626c2d25e13.Catalog Task.number","label":"4 - Create Catalog Task➛Catalog Task➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"sc_task","column_name":"number"},{"name":"subflow.assigned_to","label":"Input➛Assigned To","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"930753f6-894f-4f37-9619-fc4a90c154a0"}}]</label_cache>
+        <master_snapshot>9e8da0c647e11510c78b84d7536d43e1</master_snapshot>
+        <name>Crowley Task</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>549ca84647e11510c78b84d7536d4358</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Crowley Task</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name>sys_hub_flow_549ca84647e11510c78b84d7536d4358</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:46</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=549ca84647e11510c78b84d7536d4358"/>
+    <sys_variable_value action="delete_multiple" query="document_key=549ca84647e11510c78b84d7536d4358"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_549ca84647e11510c78b84d7536d4358^id=549ca84647e11510c78b84d7536d4358"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=549ca84647e11510c78b84d7536d4358"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=549ca84647e11510c78b84d7536d4358"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=549ca84647e11510c78b84d7536d4358^sys_idNOT INdc9ca84647e11510c78b84d7536d4358"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>549ca84647e11510c78b84d7536d4358</id>
+        <name>Crowley Task</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:58</sys_created_on>
+        <sys_id>dc9ca84647e11510c78b84d7536d4358</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:58</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=dc9ca84647e11510c78b84d7536d4358"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=549ca84647e11510c78b84d7536d4358^sys_idNOT IN1c9ca84647e11510c78b84d7536d4365,289ca84647e11510c78b84d7536d436c,a09ca84647e11510c78b84d7536d4369,ac9ca84647e11510c78b84d7536d4371,dc9ca84647e11510c78b84d7536d435f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=6bcd2813-92df-41bc-ab04-94ad1158afb6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>short_description</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Short Description</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Crowley Task">549ca84647e11510c78b84d7536d4358</model>
+        <model_id>549ca84647e11510c78b84d7536d4358</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_549ca84647e11510c78b84d7536d4358</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:58</sys_created_on>
+        <sys_id>1c9ca84647e11510c78b84d7536d4365</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=19a7645d-b350-4aaf-af50-0e9e156619ea</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sys_user_group</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>assignment_group</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Assignment Group</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Crowley Task">549ca84647e11510c78b84d7536d4358</model>
+        <model_id>549ca84647e11510c78b84d7536d4358</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_549ca84647e11510c78b84d7536d4358</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_user_group">sys_user_group</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:58</sys_created_on>
+        <sys_id>289ca84647e11510c78b84d7536d436c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=9672d660-4a46-4e82-9886-39879b90ce3e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>description</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Description</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Crowley Task">549ca84647e11510c78b84d7536d4358</model>
+        <model_id>549ca84647e11510c78b84d7536d4358</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_549ca84647e11510c78b84d7536d4358</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:58</sys_created_on>
+        <sys_id>a09ca84647e11510c78b84d7536d4369</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=930753f6-894f-4f37-9619-fc4a90c154a0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sys_user</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>assigned_to</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Assigned To</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Crowley Task">549ca84647e11510c78b84d7536d4358</model>
+        <model_id>549ca84647e11510c78b84d7536d4358</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_549ca84647e11510c78b84d7536d4358</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:58</sys_created_on>
+        <sys_id>ac9ca84647e11510c78b84d7536d4371</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=8f21dbf9-9303-4ab1-9360-ce650796775d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_req_item</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requested_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Requested Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Crowley Task">549ca84647e11510c78b84d7536d4358</model>
+        <model_id>549ca84647e11510c78b84d7536d4358</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_549ca84647e11510c78b84d7536d4358</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:58</sys_created_on>
+        <sys_id>dc9ca84647e11510c78b84d7536d435f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=549ca84647e11510c78b84d7536d4358^sys_idNOT INa09ca84647e11510c78b84d7536d4389"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDa09ca8461ce11510d8ce178407d6a286,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,sourceId=0314fcfa-078b-4ab5-9fed-2626c2d25e13,sourceType=action,sourceUiUniqueId=0314fcfa-078b-4ab5-9fed-2626c2d25e13,uiType=object,uiTypeLabel=Object,uiUniqueId=83e352a2-d010-4deb-a8f2-ac8d7d283d4f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>output</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Crowley Task">549ca84647e11510c78b84d7536d4358</model>
+        <model_id>549ca84647e11510c78b84d7536d4358</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_549ca84647e11510c78b84d7536d4358</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:58</sys_created_on>
+        <sys_id>a09ca84647e11510c78b84d7536d4389</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=549ca84647e11510c78b84d7536d4358"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=549ca84647e11510c78b84d7536d4358^sys_idNOT IN0fcbb91247a55510c78b84d7536d4330,6c9ca84647e11510c78b84d7536d43b1,83cbb91247a55510c78b84d7536d4327,a89ca84647e11510c78b84d7536d4399,a89ca84647e11510c78b84d7536d43f7"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Crowley Task">549ca84647e11510c78b84d7536d4358</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-28 14:15:37</sys_created_on>
+        <sys_id>0fcbb91247a55510c78b84d7536d4330</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-08-30 17:34:52</sys_updated_on>
+        <ui_id>77819555-640d-490e-b4fc-830ee21b6b3e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0fcbb91247a55510c78b84d7536d4330"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0fcbb91247a55510c78b84d7536d4330</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-28 14:15:37</sys_created_on>
+        <sys_id>4bcbb91247a55510c78b84d7536d4332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:37</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0fcbb91247a55510c78b84d7536d4330"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>0fcbb91247a55510c78b84d7536d4330</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-28 14:15:37</sys_created_on>
+        <sys_id>07cbb91247a55510c78b84d7536d4332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{subflow.requested_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>0fcbb91247a55510c78b84d7536d4330</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-28 14:15:37</sys_created_on>
+        <sys_id>43cbb91247a55510c78b84d7536d4332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>0fcbb91247a55510c78b84d7536d4330</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-28 14:15:37</sys_created_on>
+        <sys_id>c7cbb91247a55510c78b84d7536d4332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>comments={{flow_variable.task_message}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0fcbb91247a55510c78b84d7536d4330"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0fcbb91247a55510c78b84d7536d4330"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Crowley Task - Add Variables">976f1a239799111083f1f8b3f153af9b</action_type>
+        <action_type_parent display_value="Crowley Task - Add Variables">9a5cd26f9759111083f1f8b3f153afe3</action_type_parent>
+        <comment/>
+        <compiled_snapshot>976f1a239799111083f1f8b3f153af9b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Crowley Task">549ca84647e11510c78b84d7536d4358</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:59</sys_created_on>
+        <sys_id>6c9ca84647e11510c78b84d7536d43b1</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-08-30 17:34:52</sys_updated_on>
+        <ui_id>27786f72-a6bb-4089-a1fd-a9da99c99c41</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6c9ca84647e11510c78b84d7536d43b1"/>
+    <sys_element_mapping action="delete_multiple" query="id=6c9ca84647e11510c78b84d7536d43b1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>catalog_task_id</field>
+        <id>6c9ca84647e11510c78b84d7536d43b1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:59</sys_created_on>
+        <sys_id>e09ca84647e11510c78b84d7536d43f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_976f1a239799111083f1f8b3f153af9b</table>
+        <value>{{0314fcfa-078b-4ab5-9fed-2626c2d25e13.Catalog Task.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requested_item</field>
+        <id>6c9ca84647e11510c78b84d7536d43b1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:59</sys_created_on>
+        <sys_id>a49ca84647e11510c78b84d7536d43f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_976f1a239799111083f1f8b3f153af9b</table>
+        <value>{{subflow.requested_item}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6c9ca84647e11510c78b84d7536d43b1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6c9ca84647e11510c78b84d7536d43b1"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Get Message">1449b88247251510c78b84d7536d43d1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>1449b88247251510c78b84d7536d43d1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Crowley Task">549ca84647e11510c78b84d7536d4358</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-28 14:15:36</sys_created_on>
+        <sys_id>83cbb91247a55510c78b84d7536d4327</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-08-30 17:34:52</sys_updated_on>
+        <ui_id>737cb7a3-8bce-41f1-b8a5-00350a07bb60</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=83cbb91247a55510c78b84d7536d4327"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>83cbb91247a55510c78b84d7536d4327</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-28 14:15:36</sys_created_on>
+        <sys_id>4bcbb91247a55510c78b84d7536d4328</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:36</sys_updated_on>
+        <value>Crowley Task.Task Created</value>
+        <variable display_value="Key">5849b88247251510c78b84d7536d43d4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_1449b88247251510c78b84d7536d43d1^id=83cbb91247a55510c78b84d7536d4327"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=83cbb91247a55510c78b84d7536d4327"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=83cbb91247a55510c78b84d7536d4327"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Catalog Task">af51fd0e73141300612c273ffff6a785</action_type>
+        <action_type_parent display_value="Create Catalog Task">f597c41073081300612c273ffff6a767</action_type_parent>
+        <comment/>
+        <compiled_snapshot>af51fd0e73141300612c273ffff6a785</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Crowley Task">549ca84647e11510c78b84d7536d4358</flow>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:59</sys_created_on>
+        <sys_id>a89ca84647e11510c78b84d7536d4399</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-08-30 17:34:52</sys_updated_on>
+        <ui_id>0314fcfa-078b-4ab5-9fed-2626c2d25e13</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a89ca84647e11510c78b84d7536d4399"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a89ca84647e11510c78b84d7536d4399</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:59</sys_created_on>
+        <sys_id>689ca84647e11510c78b84d7536d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:59</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Wait">f751fd0e73141300612c273ffff6a7b2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a89ca84647e11510c78b84d7536d4399"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_fields</field>
+        <id>a89ca84647e11510c78b84d7536d4399</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:59</sys_created_on>
+        <sys_id>e49ca84647e11510c78b84d7536d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value>description={{subflow.description}}^assignment_group={{subflow.assignment_group}}^assigned_to={{subflow.assigned_to}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_requested_item</field>
+        <id>a89ca84647e11510c78b84d7536d4399</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:59</sys_created_on>
+        <sys_id>609ca84647e11510c78b84d7536d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value>{{subflow.requested_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_short_description</field>
+        <id>a89ca84647e11510c78b84d7536d4399</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:59</sys_created_on>
+        <sys_id>ac9ca84647e11510c78b84d7536d43a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value>{{subflow.short_description}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_wait</field>
+        <id>a89ca84647e11510c78b84d7536d4399</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:59</sys_created_on>
+        <sys_id>249ca84647e11510c78b84d7536d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a89ca84647e11510c78b84d7536d4399"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a89ca84647e11510c78b84d7536d4399"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <comment/>
+        <compiled_snapshot>89ce8a4187120010663ca1bb36cb0be3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Crowley Task">549ca84647e11510c78b84d7536d4358</flow>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:59</sys_created_on>
+        <sys_id>a89ca84647e11510c78b84d7536d43f7</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-08-30 17:34:52</sys_updated_on>
+        <ui_id>071d0b73-5b40-4d8d-80d6-a6b388f4725f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a89ca84647e11510c78b84d7536d43f7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a89ca84647e11510c78b84d7536d43f7</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:59</sys_created_on>
+        <sys_id>a09ca84647e11510c78b84d7536d43fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:59</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="Table">45ce8a4187120010663ca1bb36cb0bea</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a89ca84647e11510c78b84d7536d43f7</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:59</sys_created_on>
+        <sys_id>ec9ca84647e11510c78b84d7536d43f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:59</sys_updated_on>
+        <value>active=false</value>
+        <variable display_value="Conditions">49ce8a4187120010663ca1bb36cb0bef</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a89ca84647e11510c78b84d7536d43f7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>a89ca84647e11510c78b84d7536d43f7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:59</sys_created_on>
+        <sys_id>a89ca84647e11510c78b84d7536d43f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>a89ca84647e11510c78b84d7536d43f7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:59</sys_created_on>
+        <sys_id>e49ca84647e11510c78b84d7536d43f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value>{{0314fcfa-078b-4ab5-9fed-2626c2d25e13.Catalog Task}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>a89ca84647e11510c78b84d7536d43f7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:59</sys_created_on>
+        <sys_id>6c9ca84647e11510c78b84d7536d43f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a89ca84647e11510c78b84d7536d43f7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a89ca84647e11510c78b84d7536d43f7"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=549ca84647e11510c78b84d7536d4358"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=549ca84647e11510c78b84d7536d4358^sys_idNOT IN209ca84647e11510c78b84d7536d438f,8fcbb91247a55510c78b84d7536d4329"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">1c3ca8c147691110c78b84d7536d43ba</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Crowley Task">549ca84647e11510c78b84d7536d4358</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned>output</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:58</sys_created_on>
+        <sys_id>209ca84647e11510c78b84d7536d438f</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:46</sys_updated_on>
+        <ui_id>8707ea73-d4ea-444b-85c8-7e155b65b87f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=209ca84647e11510c78b84d7536d438f"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_549ca84647e11510c78b84d7536d4358^id=209ca84647e11510c78b84d7536d438f"/>
+    <sys_element_mapping action="delete_multiple" query="id=209ca84647e11510c78b84d7536d438f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>output</field>
+        <id>209ca84647e11510c78b84d7536d438f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:59</sys_created_on>
+        <sys_id>e89ca84647e11510c78b84d7536d4391</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:59</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_549ca84647e11510c78b84d7536d4358</table>
+        <value>{{0314fcfa-078b-4ab5-9fed-2626c2d25e13.__action_status__}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=209ca84647e11510c78b84d7536d438f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=209ca84647e11510c78b84d7536d438f"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">c3cbb91247a55510c78b84d7536d4329</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Crowley Task">549ca84647e11510c78b84d7536d4358</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>task_message</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-28 14:15:37</sys_created_on>
+        <sys_id>8fcbb91247a55510c78b84d7536d4329</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:46</sys_updated_on>
+        <ui_id>bbc4137c-c632-4e5c-bae9-d4b87b590b4e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8fcbb91247a55510c78b84d7536d4329"/>
+    <sys_element_mapping action="delete_multiple" query="id=8fcbb91247a55510c78b84d7536d4329"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_message</field>
+        <id>8fcbb91247a55510c78b84d7536d4329</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-28 14:15:37</sys_created_on>
+        <sys_id>4fcbb91247a55510c78b84d7536d432c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:37</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_549ca84647e11510c78b84d7536d4358</table>
+        <value>{{737cb7a3-8bce-41f1-b8a5-00350a07bb60.message}}
+Assignment: TODO: update Crowley Task to handle assignment details in Additional Comments.
+</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_549ca84647e11510c78b84d7536d4358^id=8fcbb91247a55510c78b84d7536d4329"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=8fcbb91247a55510c78b84d7536d4329"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8fcbb91247a55510c78b84d7536d4329"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=549ca84647e11510c78b84d7536d4358"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=549ca84647e11510c78b84d7536d4358^sys_idNOT IN4fcbb91247a55510c78b84d7536d431c"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b0486cdc-3fc7-4d77-bb28-c71967500eeb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>task_message</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Task Message</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Crowley Task">549ca84647e11510c78b84d7536d4358</model>
+        <model_id>549ca84647e11510c78b84d7536d4358</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_549ca84647e11510c78b84d7536d4358</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-28 14:15:36</sys_created_on>
+        <sys_id>4fcbb91247a55510c78b84d7536d431c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Task Message</sys_name>
+        <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_4fcbb91247a55510c78b84d7536d431c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_549ca84647e11510c78b84d7536d4358^sys_idNOT IN209ca84647e11510c78b84d7536d4371,249ca84647e11510c78b84d7536d4368,6c9ca84647e11510c78b84d7536d4382,9c9ca84647e11510c78b84d7536d4364,a89ca84647e11510c78b84d7536d436b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>assignment_group</element>
+        <help/>
+        <hint/>
+        <label>Assignment Group</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_549ca84647e11510c78b84d7536d4358</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:58</sys_created_on>
+        <sys_id>209ca84647e11510c78b84d7536d4371</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>short_description</element>
+        <help/>
+        <hint/>
+        <label>Short Description</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_549ca84647e11510c78b84d7536d4358</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:58</sys_created_on>
+        <sys_id>249ca84647e11510c78b84d7536d4368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>assigned_to</element>
+        <help/>
+        <hint/>
+        <label>Assigned To</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_549ca84647e11510c78b84d7536d4358</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:58</sys_created_on>
+        <sys_id>6c9ca84647e11510c78b84d7536d4382</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>requested_item</element>
+        <help/>
+        <hint/>
+        <label>Requested Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_549ca84647e11510c78b84d7536d4358</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:58</sys_created_on>
+        <sys_id>9c9ca84647e11510c78b84d7536d4364</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>description</element>
+        <help/>
+        <hint/>
+        <label>Description</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_549ca84647e11510c78b84d7536d4358</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:58</sys_created_on>
+        <sys_id>a89ca84647e11510c78b84d7536d436b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_549ca84647e11510c78b84d7536d4358"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_549ca84647e11510c78b84d7536d4358^sys_idNOT INa49ca84647e11510c78b84d7536d438c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output</element>
+        <help/>
+        <hint/>
+        <label>output</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_549ca84647e11510c78b84d7536d4358</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:50:58</sys_created_on>
+        <sys_id>a49ca84647e11510c78b84d7536d438c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:50:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_549ca84647e11510c78b84d7536d4358"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=549ca84647e11510c78b84d7536d4358"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=549ca84647e11510c78b84d7536d4358^sys_idNOT IN728de0c647e11510c78b84d7536d43d9"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"728de0c647e11510c78b84d7536d43d9","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="Crowley Task">549ca84647e11510c78b84d7536d4358</plan_id>
+        <snapshot>dd9cf40347edd510c78b84d7536d435c</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>728de0c647e11510c78b84d7536d43d9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:46</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>crowley_task</internal_name>
+        <label_cache>[{"name":"flow_variable.task_message","label":"Flow Variables➛Task Message","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b0486cdc-3fc7-4d77-bb28-c71967500eeb"}},{"name":"77819555-640d-490e-b4fc-830ee21b6b3e.__dont_treat_as_error__","label":"3 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"77819555-640d-490e-b4fc-830ee21b6b3e.__action_status__","label":"3 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"77819555-640d-490e-b4fc-830ee21b6b3e.table_name","label":"3 - Update Record➛Requested Item Table","reference":"sc_req_item","reference_display":"Requested Item","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"77819555-640d-490e-b4fc-830ee21b6b3e.record","label":"3 - Update Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"737cb7a3-8bce-41f1-b8a5-00350a07bb60.message","label":"1 - Get Message➛Message","reference_display":"Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"88f853c5-e941-41b7-8037-6b0f01bdcf9b"}},{"name":"737cb7a3-8bce-41f1-b8a5-00350a07bb60.__dont_treat_as_error__","label":"1 - Get Message➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"335c41a1-3167-4ee3-b8b4-553f645ebf9e"}},{"name":"737cb7a3-8bce-41f1-b8a5-00350a07bb60.__action_status__","label":"1 - Get Message➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD6c49b88284251510542fd73b319a6bec","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"af8d1a31-5aa4-4ec4-8f12-ee8e0518ae5a"}},{"name":"0314fcfa-078b-4ab5-9fed-2626c2d25e13.Catalog Task.sys_id","label":"4 - Create Catalog Task➛Catalog Task➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sc_task","column_name":"sys_id"},{"name":"3fc413e5-98cb-4ac9-b426-0bb4b28b8745.__dont_treat_as_error__","label":"2 - Crowley Task - Add Variables➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"4ad3808b-3aac-40dd-88fe-e637166bb688"}},{"name":"3fc413e5-98cb-4ac9-b426-0bb4b28b8745.__action_status__","label":"2 - Crowley Task - Add Variables➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"45e9140d-71de-4d1a-bf50-0539fe22de67"}},{"name":"7dc60e21-a844-4804-95ee-fd7a7d4637d2.__dont_treat_as_error__","label":"3 - Crowley Task - Add Variables➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"4ad3808b-3aac-40dd-88fe-e637166bb688"}},{"name":"7dc60e21-a844-4804-95ee-fd7a7d4637d2.__action_status__","label":"3 - Crowley Task - Add Variables➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"45e9140d-71de-4d1a-bf50-0539fe22de67"}},{"name":"071d0b73-5b40-4d8d-80d6-a6b388f4725f.__dont_treat_as_error__","label":"6 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"071d0b73-5b40-4d8d-80d6-a6b388f4725f.__action_status__","label":"6 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"071d0b73-5b40-4d8d-80d6-a6b388f4725f.state","label":"6 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"bb871307-7a35-4de2-baeb-e32b73ea5df8.__dont_treat_as_error__","label":"2 - Crowley Task - Add Variables➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"4ad3808b-3aac-40dd-88fe-e637166bb688"}},{"name":"bb871307-7a35-4de2-baeb-e32b73ea5df8.__action_status__","label":"2 - Crowley Task - Add Variables➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"45e9140d-71de-4d1a-bf50-0539fe22de67"}},{"name":"subflow.description","label":"Input➛Description","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9672d660-4a46-4e82-9886-39879b90ce3e","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.short_description","label":"Input➛Short Description","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6bcd2813-92df-41bc-ab04-94ad1158afb6","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"0314fcfa-078b-4ab5-9fed-2626c2d25e13.__dont_treat_as_error__","label":"4 - Create Catalog Task➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0314fcfa-078b-4ab5-9fed-2626c2d25e13.__action_status__","label":"4 - Create Catalog Task➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0314fcfa-078b-4ab5-9fed-2626c2d25e13.Catalog Task","label":"4 - Create Catalog Task➛Catalog Task","reference":"sc_task","reference_display":"Catalog Task","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.asignee","label":"Input➛Asignee","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"dcb3d81d-da27-4bbe-98e9-dbe87f90771a","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.assignment_group","label":"Input➛Assignment Group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"19a7645d-b350-4aaf-af50-0e9e156619ea","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.requested_item","label":"Input➛Requested Item","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8f21dbf9-9303-4ab1-9360-ce650796775d","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"11a19d83-43a5-4f29-b5a5-1ea8d9700d23.__dont_treat_as_error__","label":"1 - Create Task➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"11a19d83-43a5-4f29-b5a5-1ea8d9700d23.__action_status__","label":"1 - Create Task➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"11a19d83-43a5-4f29-b5a5-1ea8d9700d23.Table","label":"1 - Create Task➛Catalog Task Table","reference":"sc_task","reference_display":"Catalog Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"11a19d83-43a5-4f29-b5a5-1ea8d9700d23.Record","label":"1 - Create Task➛Catalog Task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"823d1dc5-90a0-4b11-8d5c-a56e4bdcc0a7.__action_status__","label":"2 - Crowley Task - Add Variables➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"45e9140d-71de-4d1a-bf50-0539fe22de67"}},{"name":"823d1dc5-90a0-4b11-8d5c-a56e4bdcc0a7.__dont_treat_as_error__","label":"2 - Crowley Task - Add Variables➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"4ad3808b-3aac-40dd-88fe-e637166bb688"}},{"name":"1bb3366c-5999-4534-9b60-e38ccaaacbab.__action_status__","label":"2 - Crowley Task - Add Variables➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"45e9140d-71de-4d1a-bf50-0539fe22de67"}},{"name":"1bb3366c-5999-4534-9b60-e38ccaaacbab.__dont_treat_as_error__","label":"2 - Crowley Task - Add Variables➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"4ad3808b-3aac-40dd-88fe-e637166bb688"}},{"name":"subflow.requested_item.cat_item","label":"Input➛Requested Item➛Item","reference":"sc_cat_item","reference_display":"Catalog Item","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"cat_item"},{"name":"27786f72-a6bb-4089-a1fd-a9da99c99c41.__action_status__","label":"5 - Crowley Task - Add Variables➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"45e9140d-71de-4d1a-bf50-0539fe22de67"}},{"name":"27786f72-a6bb-4089-a1fd-a9da99c99c41.__dont_treat_as_error__","label":"5 - Crowley Task - Add Variables➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"4ad3808b-3aac-40dd-88fe-e637166bb688"}},{"name":"0314fcfa-078b-4ab5-9fed-2626c2d25e13.Catalog Task.number","label":"4 - Create Catalog Task➛Catalog Task➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"sc_task","column_name":"number"},{"name":"subflow.assigned_to","label":"Input➛Assigned To","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"930753f6-894f-4f37-9619-fc4a90c154a0"}}]</label_cache>
+        <master>true</master>
+        <name>Crowley Task</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Crowley Task">549ca84647e11510c78b84d7536d4358</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9e8da0c647e11510c78b84d7536d43e1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:45</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=9e8da0c647e11510c78b84d7536d43e1"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9e8da0c647e11510c78b84d7536d43e1"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_9e8da0c647e11510c78b84d7536d43e1^id=9e8da0c647e11510c78b84d7536d43e1"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=9e8da0c647e11510c78b84d7536d43e1"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9e8da0c647e11510c78b84d7536d43e1"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9e8da0c647e11510c78b84d7536d43e1^sys_idNOT IN5a8da0c647e11510c78b84d7536d43e2"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9e8da0c647e11510c78b84d7536d43e1</id>
+        <name>Crowley Task</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:12</sys_created_on>
+        <sys_id>5a8da0c647e11510c78b84d7536d43e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:12</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=5a8da0c647e11510c78b84d7536d43e2"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=9e8da0c647e11510c78b84d7536d43e1^sys_idNOT IN168de0c647e11510c78b84d7536d4310,228de0c647e11510c78b84d7536d4339,2e8de0c647e11510c78b84d7536d432c,5a8da0c647e11510c78b84d7536d43e3,ea8de0c647e11510c78b84d7536d4324"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=6bcd2813-92df-41bc-ab04-94ad1158afb6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>short_description</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Short Description</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Crowley Task">9e8da0c647e11510c78b84d7536d43e1</model>
+        <model_id>9e8da0c647e11510c78b84d7536d43e1</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9e8da0c647e11510c78b84d7536d43e1</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:12</sys_created_on>
+        <sys_id>168de0c647e11510c78b84d7536d4310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=930753f6-894f-4f37-9619-fc4a90c154a0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sys_user</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>assigned_to</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Assigned To</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Crowley Task">9e8da0c647e11510c78b84d7536d43e1</model>
+        <model_id>9e8da0c647e11510c78b84d7536d43e1</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9e8da0c647e11510c78b84d7536d43e1</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:12</sys_created_on>
+        <sys_id>228de0c647e11510c78b84d7536d4339</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=19a7645d-b350-4aaf-af50-0e9e156619ea</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sys_user_group</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>assignment_group</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Assignment Group</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Crowley Task">9e8da0c647e11510c78b84d7536d43e1</model>
+        <model_id>9e8da0c647e11510c78b84d7536d43e1</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9e8da0c647e11510c78b84d7536d43e1</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_user_group">sys_user_group</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:12</sys_created_on>
+        <sys_id>2e8de0c647e11510c78b84d7536d432c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=8f21dbf9-9303-4ab1-9360-ce650796775d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_req_item</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requested_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Requested Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Crowley Task">9e8da0c647e11510c78b84d7536d43e1</model>
+        <model_id>9e8da0c647e11510c78b84d7536d43e1</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9e8da0c647e11510c78b84d7536d43e1</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:12</sys_created_on>
+        <sys_id>5a8da0c647e11510c78b84d7536d43e3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=9672d660-4a46-4e82-9886-39879b90ce3e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>description</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Description</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Crowley Task">9e8da0c647e11510c78b84d7536d43e1</model>
+        <model_id>9e8da0c647e11510c78b84d7536d43e1</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9e8da0c647e11510c78b84d7536d43e1</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:12</sys_created_on>
+        <sys_id>ea8de0c647e11510c78b84d7536d4324</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=9e8da0c647e11510c78b84d7536d43e1^sys_idNOT IN668de0c647e11510c78b84d7536d434a"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD6e8de0c6dfe11510e0626ff648911947,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,sourceId=0314fcfa-078b-4ab5-9fed-2626c2d25e13,sourceType=action,sourceUiUniqueId=0314fcfa-078b-4ab5-9fed-2626c2d25e13,uiType=object,uiTypeLabel=Object,uiUniqueId=83e352a2-d010-4deb-a8f2-ac8d7d283d4f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>output</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Crowley Task">9e8da0c647e11510c78b84d7536d43e1</model>
+        <model_id>9e8da0c647e11510c78b84d7536d43e1</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_9e8da0c647e11510c78b84d7536d43e1</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:12</sys_created_on>
+        <sys_id>668de0c647e11510c78b84d7536d434a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9e8da0c647e11510c78b84d7536d43e1"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=9e8da0c647e11510c78b84d7536d43e1^sys_idNOT IN74db3d1247a55510c78b84d7536d4301,78db3d1247a55510c78b84d7536d4307,a28de0c647e11510c78b84d7536d4361,a28de0c647e11510c78b84d7536d436b,e28de0c647e11510c78b84d7536d4399"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Get Message">1449b88247251510c78b84d7536d43d1</action_type>
+        <action_type_parent display_value="Get Message">0506b0ce47e11510c78b84d7536d43c4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>1449b88247251510c78b84d7536d43d1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Crowley Task">9e8da0c647e11510c78b84d7536d43e1</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-28 14:15:44</sys_created_on>
+        <sys_id>74db3d1247a55510c78b84d7536d4301</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:44</sys_updated_on>
+        <ui_id>737cb7a3-8bce-41f1-b8a5-00350a07bb60</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=74db3d1247a55510c78b84d7536d4301"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>74db3d1247a55510c78b84d7536d4301</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-28 14:15:44</sys_created_on>
+        <sys_id>34db3d1247a55510c78b84d7536d4302</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:44</sys_updated_on>
+        <value>Crowley Task.Task Created</value>
+        <variable display_value="Key">5849b88247251510c78b84d7536d43d4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_1449b88247251510c78b84d7536d43d1^id=74db3d1247a55510c78b84d7536d4301"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=74db3d1247a55510c78b84d7536d4301"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=74db3d1247a55510c78b84d7536d4301"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Crowley Task">9e8da0c647e11510c78b84d7536d43e1</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-28 14:15:44</sys_created_on>
+        <sys_id>78db3d1247a55510c78b84d7536d4307</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:44</sys_updated_on>
+        <ui_id>77819555-640d-490e-b4fc-830ee21b6b3e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=78db3d1247a55510c78b84d7536d4307"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>78db3d1247a55510c78b84d7536d4307</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-28 14:15:44</sys_created_on>
+        <sys_id>b0db3d1247a55510c78b84d7536d4309</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:44</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=78db3d1247a55510c78b84d7536d4307"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>78db3d1247a55510c78b84d7536d4307</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-28 14:15:44</sys_created_on>
+        <sys_id>7cdb3d1247a55510c78b84d7536d4308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{subflow.requested_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>78db3d1247a55510c78b84d7536d4307</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-28 14:15:44</sys_created_on>
+        <sys_id>b8db3d1247a55510c78b84d7536d4308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>78db3d1247a55510c78b84d7536d4307</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-28 14:15:44</sys_created_on>
+        <sys_id>30db3d1247a55510c78b84d7536d4309</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>comments={{flow_variable.task_message}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=78db3d1247a55510c78b84d7536d4307"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=78db3d1247a55510c78b84d7536d4307"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Catalog Task">af51fd0e73141300612c273ffff6a785</action_type>
+        <action_type_parent display_value="Create Catalog Task">f597c41073081300612c273ffff6a767</action_type_parent>
+        <comment/>
+        <compiled_snapshot>af51fd0e73141300612c273ffff6a785</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Crowley Task">9e8da0c647e11510c78b84d7536d43e1</flow>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:13</sys_created_on>
+        <sys_id>a28de0c647e11510c78b84d7536d4361</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:44</sys_updated_on>
+        <ui_id>0314fcfa-078b-4ab5-9fed-2626c2d25e13</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a28de0c647e11510c78b84d7536d4361"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a28de0c647e11510c78b84d7536d4361</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:13</sys_created_on>
+        <sys_id>aa8de0c647e11510c78b84d7536d4363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:13</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Wait">f751fd0e73141300612c273ffff6a7b2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a28de0c647e11510c78b84d7536d4361"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_fields</field>
+        <id>a28de0c647e11510c78b84d7536d4361</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:13</sys_created_on>
+        <sys_id>2a8de0c647e11510c78b84d7536d4363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value>description={{subflow.description}}^assignment_group={{subflow.assignment_group}}^assigned_to={{subflow.assigned_to}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_requested_item</field>
+        <id>a28de0c647e11510c78b84d7536d4361</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:13</sys_created_on>
+        <sys_id>a28de0c647e11510c78b84d7536d4363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value>{{subflow.requested_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_short_description</field>
+        <id>a28de0c647e11510c78b84d7536d4361</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:13</sys_created_on>
+        <sys_id>ee8de0c647e11510c78b84d7536d4362</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value>{{subflow.short_description}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_wait</field>
+        <id>a28de0c647e11510c78b84d7536d4361</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:13</sys_created_on>
+        <sys_id>668de0c647e11510c78b84d7536d4363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a28de0c647e11510c78b84d7536d4361"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a28de0c647e11510c78b84d7536d4361"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Crowley Task - Add Variables">976f1a239799111083f1f8b3f153af9b</action_type>
+        <action_type_parent display_value="Crowley Task - Add Variables">9a5cd26f9759111083f1f8b3f153afe3</action_type_parent>
+        <comment/>
+        <compiled_snapshot>976f1a239799111083f1f8b3f153af9b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Crowley Task">9e8da0c647e11510c78b84d7536d43e1</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:13</sys_created_on>
+        <sys_id>a28de0c647e11510c78b84d7536d436b</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:44</sys_updated_on>
+        <ui_id>27786f72-a6bb-4089-a1fd-a9da99c99c41</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a28de0c647e11510c78b84d7536d436b"/>
+    <sys_element_mapping action="delete_multiple" query="id=a28de0c647e11510c78b84d7536d436b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>catalog_task_id</field>
+        <id>a28de0c647e11510c78b84d7536d436b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:13</sys_created_on>
+        <sys_id>668de0c647e11510c78b84d7536d436c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_976f1a239799111083f1f8b3f153af9b</table>
+        <value>{{0314fcfa-078b-4ab5-9fed-2626c2d25e13.Catalog Task.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requested_item</field>
+        <id>a28de0c647e11510c78b84d7536d436b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:13</sys_created_on>
+        <sys_id>2a8de0c647e11510c78b84d7536d436c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_976f1a239799111083f1f8b3f153af9b</table>
+        <value>{{subflow.requested_item}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a28de0c647e11510c78b84d7536d436b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a28de0c647e11510c78b84d7536d436b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <comment/>
+        <compiled_snapshot>89ce8a4187120010663ca1bb36cb0be3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Crowley Task">9e8da0c647e11510c78b84d7536d43e1</flow>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:13</sys_created_on>
+        <sys_id>e28de0c647e11510c78b84d7536d4399</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:44</sys_updated_on>
+        <ui_id>071d0b73-5b40-4d8d-80d6-a6b388f4725f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e28de0c647e11510c78b84d7536d4399"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e28de0c647e11510c78b84d7536d4399</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:13</sys_created_on>
+        <sys_id>6a8de0c647e11510c78b84d7536d439b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:13</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="Table">45ce8a4187120010663ca1bb36cb0bea</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e28de0c647e11510c78b84d7536d4399</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:13</sys_created_on>
+        <sys_id>a68de0c647e11510c78b84d7536d439b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:13</sys_updated_on>
+        <value>active=false</value>
+        <variable display_value="Conditions">49ce8a4187120010663ca1bb36cb0bef</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e28de0c647e11510c78b84d7536d4399"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>e28de0c647e11510c78b84d7536d4399</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:13</sys_created_on>
+        <sys_id>628de0c647e11510c78b84d7536d439b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>e28de0c647e11510c78b84d7536d4399</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:13</sys_created_on>
+        <sys_id>ae8de0c647e11510c78b84d7536d439a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value>{{0314fcfa-078b-4ab5-9fed-2626c2d25e13.Catalog Task}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>e28de0c647e11510c78b84d7536d4399</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:13</sys_created_on>
+        <sys_id>268de0c647e11510c78b84d7536d439b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e28de0c647e11510c78b84d7536d4399"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e28de0c647e11510c78b84d7536d4399"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=9e8da0c647e11510c78b84d7536d43e1"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=9e8da0c647e11510c78b84d7536d43e1^sys_idNOT IN41db3d1247a55510c78b84d7536d4311,e28de0c647e11510c78b84d7536d4355"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">c3cbb91247a55510c78b84d7536d4329</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Crowley Task">9e8da0c647e11510c78b84d7536d43e1</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>task_message</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-28 14:15:44</sys_created_on>
+        <sys_id>41db3d1247a55510c78b84d7536d4311</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:44</sys_updated_on>
+        <ui_id>bbc4137c-c632-4e5c-bae9-d4b87b590b4e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=41db3d1247a55510c78b84d7536d4311"/>
+    <sys_element_mapping action="delete_multiple" query="id=41db3d1247a55510c78b84d7536d4311"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_message</field>
+        <id>41db3d1247a55510c78b84d7536d4311</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-28 14:15:44</sys_created_on>
+        <sys_id>05db3d1247a55510c78b84d7536d4314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:44</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_9e8da0c647e11510c78b84d7536d43e1</table>
+        <value>{{737cb7a3-8bce-41f1-b8a5-00350a07bb60.message}}
+Assignment: TODO: update Crowley Task to handle assignment details in Additional Comments.
+</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_9e8da0c647e11510c78b84d7536d43e1^id=41db3d1247a55510c78b84d7536d4311"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=41db3d1247a55510c78b84d7536d4311"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=41db3d1247a55510c78b84d7536d4311"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">1c3ca8c147691110c78b84d7536d43ba</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Crowley Task">9e8da0c647e11510c78b84d7536d43e1</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned>output</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:13</sys_created_on>
+        <sys_id>e28de0c647e11510c78b84d7536d4355</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:45</sys_updated_on>
+        <ui_id>8707ea73-d4ea-444b-85c8-7e155b65b87f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e28de0c647e11510c78b84d7536d4355"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_9e8da0c647e11510c78b84d7536d43e1^id=e28de0c647e11510c78b84d7536d4355"/>
+    <sys_element_mapping action="delete_multiple" query="id=e28de0c647e11510c78b84d7536d4355"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>output</field>
+        <id>e28de0c647e11510c78b84d7536d4355</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:13</sys_created_on>
+        <sys_id>668de0c647e11510c78b84d7536d4358</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:13</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_9e8da0c647e11510c78b84d7536d43e1</table>
+        <value>{{0314fcfa-078b-4ab5-9fed-2626c2d25e13.__action_status__}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e28de0c647e11510c78b84d7536d4355"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e28de0c647e11510c78b84d7536d4355"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9e8da0c647e11510c78b84d7536d43e1"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=9e8da0c647e11510c78b84d7536d43e1^sys_idNOT IN74dbf91247a55510c78b84d7536d43f5"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b0486cdc-3fc7-4d77-bb28-c71967500eeb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>task_message</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Task Message</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Crowley Task">9e8da0c647e11510c78b84d7536d43e1</model>
+        <model_id>9e8da0c647e11510c78b84d7536d43e1</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_9e8da0c647e11510c78b84d7536d43e1</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-28 14:15:44</sys_created_on>
+        <sys_id>74dbf91247a55510c78b84d7536d43f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Task Message</sys_name>
+        <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_74dbf91247a55510c78b84d7536d43f5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 14:15:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_9e8da0c647e11510c78b84d7536d43e1^sys_idNOT IN1e8de0c647e11510c78b84d7536d430c,1e8de0c647e11510c78b84d7536d4314,268de0c647e11510c78b84d7536d4329,2a8de0c647e11510c78b84d7536d4335,ae8de0c647e11510c78b84d7536d4341"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>requested_item</element>
+        <help/>
+        <hint/>
+        <label>Requested Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9e8da0c647e11510c78b84d7536d43e1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:12</sys_created_on>
+        <sys_id>1e8de0c647e11510c78b84d7536d430c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>short_description</element>
+        <help/>
+        <hint/>
+        <label>Short Description</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9e8da0c647e11510c78b84d7536d43e1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:12</sys_created_on>
+        <sys_id>1e8de0c647e11510c78b84d7536d4314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>description</element>
+        <help/>
+        <hint/>
+        <label>Description</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9e8da0c647e11510c78b84d7536d43e1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:12</sys_created_on>
+        <sys_id>268de0c647e11510c78b84d7536d4329</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>assignment_group</element>
+        <help/>
+        <hint/>
+        <label>Assignment Group</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9e8da0c647e11510c78b84d7536d43e1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:12</sys_created_on>
+        <sys_id>2a8de0c647e11510c78b84d7536d4335</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>assigned_to</element>
+        <help/>
+        <hint/>
+        <label>Assigned To</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9e8da0c647e11510c78b84d7536d43e1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:12</sys_created_on>
+        <sys_id>ae8de0c647e11510c78b84d7536d4341</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9e8da0c647e11510c78b84d7536d43e1"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_9e8da0c647e11510c78b84d7536d43e1^sys_idNOT IN2a8de0c647e11510c78b84d7536d434f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output</element>
+        <help/>
+        <hint/>
+        <label>output</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_9e8da0c647e11510c78b84d7536d43e1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 13:55:13</sys_created_on>
+        <sys_id>2a8de0c647e11510c78b84d7536d434f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Crowley Flow Core" source="x_110640_cr_fcore">36eae88247e11510c78b84d7536d431b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Crowley Flow Core">36eae88247e11510c78b84d7536d431b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:55:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9e8da0c647e11510c78b84d7536d43e1"/>
+    <sys_hub_flow action="update">
+        <sys_id>549ca84647e11510c78b84d7536d4358</sys_id>
+        <latest_snapshot>9e8da0c647e11510c78b84d7536d43e1</latest_snapshot>
+    </sys_hub_flow>
+</record_update>
